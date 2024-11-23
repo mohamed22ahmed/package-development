@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Payment\Stripe\Http\Controllers\StripeController;
 
-Route::get('/stripe', function () {
-    return 123;
-});
+Route::get('/stripe', [StripeController::class, 'index'])->name('stripe.index');
