@@ -1,0 +1,24 @@
+{
+    "name": "payment/stripe",
+    "description": "this package to integrate stripe to the project easily with magic functions i will create",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Payment\\Stripe\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Payment\\Stripe\\StripeServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "mohamed22ahmed",
+            "email": "hammam111998@gmail.com"
+        }
+    ],
+    "require": {}
+}
